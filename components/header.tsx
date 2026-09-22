@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -12,6 +13,13 @@ export default function Header() {
 
   return (
     <header className="flex justify-end items-center p-4 gap-4 border-b">
+      <Link
+        href="/jobs"
+        className="text-sm mr-auto hover:underline"
+      >
+        Job Feed
+      </Link>
+
       {isSignedIn ? (
         <UserButton />
       ) : (
